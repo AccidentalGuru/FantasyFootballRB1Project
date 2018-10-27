@@ -19,3 +19,4 @@ def scrapeTable(url):
 		print column, value
 
 scrapeTable("https://www.pro-football-reference.com/years/2017/rushing.htm")
+
