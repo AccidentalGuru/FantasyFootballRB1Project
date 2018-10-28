@@ -2,6 +2,9 @@ from urllib import urlopen
 from bs4 import BeautifulSoup
 import re
 
+start_year = 2013
+end_year = 2017
+
 def scrapeTable(url):
 
 	html = urlopen(url)
@@ -16,7 +19,11 @@ def scrapeTable(url):
 
 		column = stat[0][1:-1]
 
-		print column, value
+		print column, re.sub(r'\*|\+', "", value)
 
-scrapeTable("https://www.pro-football-reference.com/years/2017/rushing.htm")
+def yearIterator():
+	for number in range(start_year, end_year + 1):
+		url = "https://www.pro-football-reference.com/years/" + str(number) + "/rushing.htm"
+
+		scrapeTable(url)
 
