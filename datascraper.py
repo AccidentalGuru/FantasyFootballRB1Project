@@ -16,7 +16,6 @@ def scrapeTable(url):
 	for line in data:
 		stat = re.findall(r'"[a-z_]+"', str(line))
 		value = line.get_text()
-
 		column = stat[0][1:-1]
 
 		print column, re.sub(r'\*|\+', "", value)
