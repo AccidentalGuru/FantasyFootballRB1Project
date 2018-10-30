@@ -102,7 +102,6 @@ def postToDB():
 
 			index = index + 27
 
-
 			# This needs PEP-8
 			cursor.execute('INSERT INTO rushing_data (year, player, team, age, pos, g, gs, rush_att, rush_yds, rush_td, rush_long, rush_yds_per_att, rush_yds_per_g, rush_att_per_g, targets, rec, rec_yds, rec_yds_per_rec, rec_td, rec_long, rec_per_g, rec_yds_per_g, catch_pct, touches, yds_per_touch, yds_from_scrimmage, rush_receive_td, fumbles) VALUES ("%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s", "%s");' % (year, player, team, age, pos, g, gs, rush_att, rush_yds, rush_td, rush_long, rush_yds_per_att, rush_yds_per_g, rush_att_per_g, targets, rec, rec_yds, rec_yds_per_rec, rec_td, rec_long, rec_per_g, rec_yds_per_g, catch_pct, touches, yds_per_touch, yds_from_scrimmage, rush_receive_td, fumbles))
 			cnx.commit()
