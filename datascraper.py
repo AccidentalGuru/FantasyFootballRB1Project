@@ -75,7 +75,7 @@ def postToDB():
 			player = contents[index+0][0]
 			team = contents[index+1]
 			age = contents[index+2]
-			pos = contents[index+3].capitalize()
+			pos = contents[index+3].upper()
 			g = contents[index+4]
 			gs = contents[index+5]
 			rush_att = contents[index+6]
