@@ -6,6 +6,8 @@ import re
 # Get URLs to scrape
 
 def geturls():
+	print "Fetching URLs..."
+	
 	start_year = 2000
 	end_year = 2018
 	prefix = "https://www.pro-football-reference.com/years/"
@@ -15,7 +17,7 @@ def geturls():
 
 	for number in range(start_year, end_year):
 		url = prefix + str(number) + suffix
-
+		print "URL Fetched: ", url
 		urls.append(url)
 
 	return urls
@@ -23,7 +25,8 @@ def geturls():
 # Iterate through URLs, scrape data, and save in list
 
 def scrapeurls():
-
+	print "Scraping URLs..."
+	
 	urls = geturls()
 
 	contents = []
@@ -36,6 +39,8 @@ def scrapeurls():
 		data = bsObj.findAll("td")
 
 		year = int(''.join(re.findall(r"[\d]", url)))
+		
+		print "Scraping...", url
 
 		for line in data:
 			stat = re.findall(r'"[a-z_]+"', str(line))
@@ -116,7 +121,7 @@ def postToDB():
 
 			cnx.commit()
 
-			print "SUCCESS!", player, year
+			print "Successfully added to database: ", player, year
 
 		# There's no utility for this error, so passing.
 		except Exception as e:
