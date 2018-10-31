@@ -20,7 +20,7 @@ This is a complete, out-of-the-box webscraper and local database builder written
   
 ## MacOS Instructions - Populating the database (scraping year-end rushing stats via datascraper.py):
 
-###NOTE: The "start_year" and "end_year" variables are currently hard-coded to 2000 - 2018. You can change this to a year as far back as 1932. Simply update the int values for the noted variables on lines 11 & 12.
+**NOTE**: The "start_year" and "end_year" variables are currently hard-coded to 2000 - 2018. You can change this to a year as far back as 1932. Simply update the int values for the noted variables on lines 11 & 12.
 
 First, open this code in your code editor of choice. Be sure to update the values on lines 61 & 62 to ensure that you have the proper database credentials entered. Then, you can simply compile your code from your editor or, you can save this file to your machine, open the Terminal and copy and paste "python <file path for datascraper.py>".
   
