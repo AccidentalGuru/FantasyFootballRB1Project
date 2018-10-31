@@ -1,4 +1,4 @@
-# NFLRBWebScraper
+# FantasyFootballRB1Project
 
 This is a complete, out-of-the-box webscraper and local database builder written in Python 2.7 (I know...I'll be updating my old-school self soon). Focusing exclusively on Fantasy Football runningback data, this script scrapes NFL rushing data from 2000 - 2017, extracts and cleans it, and then posts it back to a database.
 
