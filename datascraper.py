@@ -63,8 +63,8 @@ def scrapeurls():
 # Iterate through list of data and post to database
 
 def postToDB():
-	cnx = mysql.connector.connect(user ='root', password = 'xxxxx',
-		host = 'localhost', database = 'xxxxx')
+	cnx = mysql.connector.connect(user ='xxxxx', password = 'xxxxx',
+		host = 'xxxxx', database = 'xxxxx')
 
 	cursor = cnx.cursor()
 
