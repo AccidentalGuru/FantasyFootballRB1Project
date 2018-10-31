@@ -25,7 +25,6 @@ def geturls():
 # Iterate through URLs, scrape data, and save in list
 
 def scrapeurls():
-	print "Scraping URLs..."
 	
 	urls = geturls()
 
