@@ -31,9 +31,8 @@ That should execute the code, which takes <60 seconds to run to completion. Ther
 1) Open Terminal
 2) Copy and paste "/usr/local/mysql/bin/mysql -u root -p"
 3) Enter your password
-4) Copy and paste "CREATE DATABASE <enter desired database name>;" and hit enter/return
-5) Copy and paste "USE <enter database name>;" and hit enter/return
-6) Copy and paste "CREATE TABLE <enter database name> (league_type varchar(255), year int, player varchar(255), team varchar(255), age int, g int, gs int, rush_yds int, rush_tds int, rush_yds_per_g float(5,2), rush_att_per_g float(5,2), targets int, rec int, rec_yds int, rec_tds int, rush_receive_td int, touches int, fumbles int, total_fantasy_score int);" and hit enter/return
+4) Copy and paste "USE <enter database name>;" and hit enter/return
+5) Copy and paste "CREATE TABLE <enter database name> (league_type varchar(255), year int, player varchar(255), team varchar(255), age int, g int, gs int, rush_yds int, rush_tds int, rush_yds_per_g float(5,2), rush_att_per_g float(5,2), targets int, rec int, rec_yds int, rec_tds int, rush_receive_td int, touches int, fumbles int, total_fantasy_score int);" and hit enter/return
 
 Open this code in your code editor of choice. Then, you can simply build your code from your editor or, you can save this file to your machine, open the Terminal and copy and paste "python <file path for datascraper.py>".
   
