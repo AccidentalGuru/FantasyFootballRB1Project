@@ -4,6 +4,8 @@ This is a complete, out-of-the-box webscraper and local database builder written
 
 ## MacOS Instructions - Installing the necessary libraries:
 
+**NOTE**: To install 'pip': https://pip.pypa.io/en/stable/installing/
+
 1) Open Terminal
 2) Copy and paste "pip install urllib"; hit enter/return
 3) Copy and paste "pip install beautifulsoup4"; hit enter/return
