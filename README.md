@@ -26,7 +26,7 @@ First, open this code in your code editor of choice. Be sure to update the value
   
 That should execute the code, which takes <60 seconds to run to completion. There are prompts in the code to illustrate what's happening at each step.
 
-## MacOS Instructions - Populating the database #2 (querying database and calculating totals via ):
+## MacOS Instructions - Populating the database #2 (querying database and calculating totals via fantasypointtotals.py):
 
 1) Open Terminal
 2) Copy and paste "/usr/local/mysql/bin/mysql -u root -p"
