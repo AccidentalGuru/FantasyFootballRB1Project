@@ -11,6 +11,7 @@ This is a complete, out-of-the-box webscraper and local database builder written
 2) Copy and paste "pip install urllib"; hit enter/return
 3) Copy and paste "pip install beautifulsoup4"; hit enter/return
 4) Copy and paste "pip install mysql-connector==2.1.4"; hit enter/return
+5) Copy and paste "pip install lxml"; hit enter/return
 
 ## MacOS Instructions - Creating the database and database table:
 
