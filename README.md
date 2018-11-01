@@ -5,6 +5,7 @@ This is a complete, out-of-the-box webscraper and local database builder written
 ## MacOS Instructions - Installing the necessary libraries:
 
 **NOTE**: To install 'pip': https://pip.pypa.io/en/stable/installing/
+**NOTE**: To install MySQL: https://dev.mysql.com/downloads/mysql/
 
 1) Open Terminal
 2) Copy and paste "pip install urllib"; hit enter/return
