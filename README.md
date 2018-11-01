@@ -28,7 +28,7 @@ This is a complete, out-of-the-box webscraper and local database builder written
 
 First, open this code in your code editor of choice. Be sure to update the values on lines 61 & 62 to ensure that you have the proper database credentials entered. Then, you can simply build your code from your editor or, you can save this file to your machine, open the Terminal and copy and paste "python <file path for datascraper.py>".
   
-That should execute the code, which takes <60 seconds to run to completion. There are prompts in the code to illustrate what's happening at each step.
+That should execute the code, which takes about 1-2 minutes to run to completion. There are prompts in the code to illustrate what's happening at each step.
 
 ## MacOS Instructions - Populating the database #2 (querying database and calculating totals via fantasypointtotals.py):
 
