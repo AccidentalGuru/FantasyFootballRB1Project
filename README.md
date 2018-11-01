@@ -34,6 +34,6 @@ That should execute the code, which takes <60 seconds to run to completion. Ther
 4) Copy and paste "USE **enter database name**;" and hit enter/return
 5) Copy and paste "CREATE TABLE **enter desired table name** (league_type varchar(255), year int, player varchar(255), team varchar(255), age int, g int, gs int, rush_yds int, rush_tds int, rush_yds_per_g float(5,2), rush_att_per_g float(5,2), targets int, rec int, rec_yds int, rec_tds int, rush_receive_td int, touches int, fumbles int, total_fantasy_score int);" and hit enter/return
 
-Open this code in your code editor of choice. Then, you can simply build your code from your editor or, you can save this file to your machine, open the Terminal and copy and paste "python <file path for datascraper.py>".
+Open this code in your code editor of choice. Be sure to update the values on lines 61 & 62 to ensure that you have the proper database credentials entered. Then, you can simply build your code from your editor or, you can save this file to your machine, open the Terminal and copy and paste "python <file path for datascraper.py>".
   
 That should execute the code, which takes ~15 seconds to run to completion. There are prompts in the code to illustrate what's happening at each step.
