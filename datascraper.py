@@ -1,15 +1,23 @@
 from bs4 import BeautifulSoup
 from urllib import urlopen
+import argparse
 import mysql.connector
 import re
+
+
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('--startYear', type=int, default=2000, dest='startYear')
+parser.add_argument('--endYear', type=int, default=2017, dest='endYear')
+
+args = parser.parse_args()
 
 # Get URLs to scrape
 
 def geturls():
 	print "Fetching URLs..."
-	
-	start_year = 2000
-	end_year = 2018
+
+	start_year = args.startYear
+	end_year = args.endYear
 	prefix = "https://www.pro-football-reference.com/years/"
 	suffix = "/rushing.htm"
 
@@ -25,7 +33,7 @@ def geturls():
 # Iterate through URLs, scrape data, and save in list
 
 def scrapeurls():
-	
+
 	urls = geturls()
 
 	contents = []
@@ -38,7 +46,7 @@ def scrapeurls():
 		data = bsObj.findAll("td")
 
 		year = int(''.join(re.findall(r"[\d]", url)))
-		
+
 		print "Scraping...", url
 
 		for line in data:
